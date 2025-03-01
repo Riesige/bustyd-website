@@ -5,26 +5,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sticky Header</title>
     <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-        }
-        .header {
+        /* Sticky Header */
+        .sticky-header {
             position: fixed;
             top: 0;
             left: 0;
             width: 100%;
             background: rgba(0, 0, 0, 0.8);
-            color: white;
-            text-align: center;
             padding: 15px;
+            text-align: center;
             z-index: 1000;
+        }
+        .sticky-header a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        .sticky-header a:hover {
+            text-decoration: underline;
+        }
+        body {
+            margin: 0;
+            padding-top: 70px; /* Prevents content from hiding behind the header */
+            font-family: Arial, sans-serif;
         }
     </style>
 </head>
 <body>
-    <div class="header">
-        <h2>My Sticky Header</h2>
+
+    <!-- Sticky Header -->
+    <div class="sticky-header">
+        <a href="#gallery">Gallery</a>
+        <a href="#videos">Videos</a>
+        <a href="https://www.patreon.com/checkout/bustyd?rid=8395512">Exclusive Videos</a>
+        <a href="#new-dawn">New Dawn</a>
+        <a href="#">Wiki</a>
+        <a href="#about-me">About Me</a>
+        <a href="https://www.patreon.com/bustyd">Support Me</a>
     </div>
+
 </body>
 </html>
